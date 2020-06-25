@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      property="og:description"
+      content="North by Northwestern's Class of 2020 seniors reflect on their time at Northwestern and what comes next."
+    />
+    <meta property="og:title" content="Commencement 2020 | North by Northwestern" />
+    <meta property="og:url" content="https://northbynorthwestern.com/2020-commencement" />
+    <link rel="shortcut icon" href="https://media.northbynorthwestern.com/media/img/favicon-hi.ico" />
+
+    <title>Commencement 2020 | North by Northwestern</title>
+    <script>
+      function equalheight(container) {
+        var currentTallest = 0,
+          currentRowStart = 0,
+          rowDivs = [],
+          elem = null,
+          topPosition = 0;
+
+        var elemArr = Array(...document.getElementsByClassName("grid-entry"));
+        elemArr.forEach((c) => {
+          elem = c;
+          elem.style.height = "auto";
+          topPostion = elem.style.topPosition;
+
+          if (currentRowStart != topPostion) {
+            for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+              rowDivs[currentDiv].height(currentTallest);
+            }
+            rowDivs.length = 0; // empty the array
+            currentRowStart = topPostion;
+            currentTallest = elem.style.height;
+            rowDivs.push(elem);
+          } else {
+            rowDivs.push(elem);
+            currentTallest = currentTallest < elem.style.height ? elem.style.height : currentTallest;
+          }
+          for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+            rowDivs[currentDiv].style.height = currentTallest;
+          }
+        });
+      }
+
+      window.addEventListener("load", (e) => {
+        equalheight(".grid-entry");
+      });
+
+      window.addEventListener("resize", (e) => {
+        equalheight(".grid-entry");
+      });
+    </script>
+  </head>
+    <style>
+    @font-face {
+      font-family: "icomoon";
+      src: url("fonts/icomoon-66504f1c.eot?vcxnuv");
+      src: url("fonts/icomoon-66504f1c.eot?#iefixvcxnuv") format("embedded-opentype"),
+        url("fonts/icomoon-fe508a5c.woff?vcxnuv") format("woff"),
+        url("fonts/icomoon-740ddb1c.ttf?vcxnuv") format("truetype"),
+        url("fonts/icomoon-7a3d0823.svg?vcxnuv#icomoon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+    [class^="icon-"],
+    [class*=" icon-"] {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .icon-point-up:before {
+      content: "\ea03";
+    }
+    .icon-facebook:before {
+      content: "\ea8c";
+    }
+    .icon-twitter:before {
+      content: "\ea91";
+    }
+    .share-icons {
+      padding-bottom: 10px;
+    }
+    .social {
+      padding: 0;
+      margin: 0;
+    }
+    .social a {
+      color: #501f84;
+    }
+    .social li {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+    .social li a {
+      display: block;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .social li span {
+      position: relative;
+      top: 10px;
+    }
+    .social li:hover {
+      cursor: pointer;
+      color: #2a2a2a;
+    }
+    .masthead {
+      background-color: #501f84;
+      padding: 0.5em 0 0.375em;
+      text-align: left;
+      width: 100%;
+    }
+    .masthead a {
+      color: #501f84;
+      text-decoration: none;
+      background: transparent;
+    }
+    .masthead .nbn-logo {
+      height: 2em;
+    }
+    .masthead .logo {
+      padding-left: 0.5em;
+    }
+    .masthead .extra-masthead {
+      color: white;
+      display: inline-table;
+      font-weight: 700;
+      height: 100%;
+      position: relative;
+      top: -0.5em;
+      padding-left: 0.5em;
+    }
+    .masthead .extra-masthead a {
+      color: white;
+      display: table-cell;
+      margin-left: 0.25em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    footer {
+      font-family: "Montserrat", Helvetica, sans-serif, Helvetica, sans-serif;
+      background-color: #501f84;
+      color: white;
+      margin-top: 50px;
+      padding-bottom: 0.5em;
+      padding-top: 0.5em;
+      width: 100%;
+    }
+    .credits-container {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1.25em;
+    }
+    .credits {
+      padding-bottom: 0.5em;
+      padding-top: 0.5em;
+    }
+    .credits p {
+      font-size: 0.875em;
+      line-height: 1.5em;
+      margin: 0;
+    }
+    .credits p a {
+      color: white;
+      text-decoration: none;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    body {
+      background-color: #1b1b1b;
+      margin: 0px;
+    }
+    .container {
+      width: 100%;
+      max-width: 990px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .extra-masthead {
+      font-family: "Montserrat", Helvetica, sans-serif;
+      letter-spacing: 1px;
+    }
+    .circular {
+      width: 100%;
+    }
+    .intro {
+      width: inherit;
+      text-align: center;
+      margin-bottom: 4em;
+    }
+    .intro a {
+      text-decoration: none;
+    }
+    .intro p {
+      font-family: "Alegreya", Georgia, serif;
+      font-style: italic;
+      color: #fafafa;
+      font-weight: 800;
+      font-size: 3.25rem;
+      padding-bottom: 0.5em;
+      padding-top: 50px;
+    }
+    .intro span {
+      background-color: #fafafa;
+      color: #501f84;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 10px;
+      font-family: "Montserrat", Helvetica, sans-serif;
+    }
+    h1 {
+      margin: 0;
+      padding-top: 20px;
+    }
+    p {
+      margin: 0;
+    }
+    .row {
+      margin-top: 2em;
+    }
+    .grid-entry {
+      float: left;
+      background-color: #fff;
+      width: 32%;
+      margin-bottom: 2em;
+      margin-right: 2%;
+    }
+    .grid-entry-pos a {
+      color: #2a2a2a;
+    }
+    .grid-entry-pos:last-child .grid-entry {
+      margin-right: 0;
+    }
+    .story-content {
+      padding: 30px 20px;
+    }
+    .story-content .story-title {
+      font-family: "Montserrat", Helvetica, sans-serif;
+      letter-spacing: 2px;
+      font-weight: 400;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      color: #501f84;
+    }
+    .story-content .story-author {
+      color: #2a2a2a;
+      font-family: "Alegreya", Georgia, serif;
+      font-style: italic;
+      font-size: 2em;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    .story-content .story-pullquote {
+      margin-top: 10px;
+      font-family: "Alegreya", Georgia, serif;
+    }
+    @media screen and (max-width: 960px) {
+      .grid-entry {
+        width: 30.67%;
+        margin-left: 2%;
+        margin-right: 0;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .grid-entry {
+        width: 47%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .grid-entry {
+        width: 92%;
+        margin-left: 4%;
+      }
+    }
+  </style>
+
+  <body>
+    <header class="masthead">
+      <div class="logo">
+        <a href="https://www.northbynorthwestern.com/">
+          <img
+            class="nbn-logo"
+            src="https://northbynorthwestern.com/content/images/2020/06/nbn-banner-logo.png"
+            alt=""
+          />
+        </a>
+        <div class="extra-masthead">
+          <a>Commencement 2020</a>
+          <!-- href="http://apps.northbynorthwestern.com/commencement/2020/" -->
+        </div>
+      </div>
+    </header>
+    <div class="intro">
+      <a>
+        <!-- href="http://apps.northbynorthwestern.com/commencement/2020/" -->
+        <p>North by Northwestern</p>
+        <span>Commencement 2020</span>
+      </a>
+    </div>
+
+    <div class="container">
+            <div class="clearfix">
+            <!-- Claire Bugos -->
+            <div class="grid-entry-pos">
+                <a target="_blank" href="http://www.northbynorthwestern.com/nbn-commencement-address">
+                <div class="grid-entry" style="height: 224px;">
+                    <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/claire-bugos.jpg" />
+                    <div class="story-content clearfix">
+                    <p class="story-title">NBN Commencement Address</p>
+                    <p class="story-author">Claire Bugos</p>
+                    <p class="story-pullquote">A love letter for the ladies.</p>
+                    </div>
+                </div>
+                </a>
+            </div>              <!-- Justin Curto -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/seven-lessons-seven-haircuts">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/justin-curto.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">Seven lessons from seven haircuts</p>
+                      <p class="story-author">Justin Curto</p>
+                      <p class="story-pullquote">My yearslong struggle to get a decent haircut at college taught me more about life than some whole classes.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              <!-- Paola De Varona -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/polar-opposites">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/paola-de-varona.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">Polar Opposites</p>
+                      <p class="story-author">Paola De Varona</p>
+                      <p class="story-pullquote">I found the highest and lowest points of my college experience in social isolation. </p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              </div>
+            <div class="clearfix">
+            <!-- David Gleisner -->
+            <div class="grid-entry-pos">
+                <a target="_blank" href="http://www.northbynorthwestern.com/old-classrooms-new-communities">
+                <div class="grid-entry" style="height: 224px;">
+                    <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/david-gleisner.jpg" />
+                    <div class="story-content clearfix">
+                    <p class="story-title">Old classrooms, new communities</p>
+                    <p class="story-author">David Gleisner</p>
+                    <p class="story-pullquote">What made Northwestern a place where I could become more self-critical and analytical was not a massive endowment, a top-10 ranking, or a glass castle — it was the people.</p>
+                    </div>
+                </div>
+                </a>
+            </div>              <!-- Molly Glick -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/nbn-was-there-for-me-when-medill-wasnt">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/molly-glick.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">NBN was there for me when Medill wasn’t</p>
+                      <p class="story-author">Molly Glick</p>
+                      <p class="story-pullquote">After setting foot on campus, I quickly realized that rankings don’t guarantee real-life perfection.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              <!-- Amanda Gordon -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/final-delirium">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/amanda-gordon.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">Final delirium</p>
+                      <p class="story-author">Amanda Gordon</p>
+                      <p class="story-pullquote">I’ll never forget those rambling phone calls in the stairwell of MFC.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              </div>
+            <div class="clearfix">
+            <!-- Zoe Grossinger -->
+            <div class="grid-entry-pos">
+                <a target="_blank" href="http://www.northbynorthwestern.com/dear-anxious-freshman">
+                <div class="grid-entry" style="height: 224px;">
+                    <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/zoe-grossinger.jpg" />
+                    <div class="story-content clearfix">
+                    <p class="story-title">Dear Anxious Freshman</p>
+                    <p class="story-author">Zoe Grossinger</p>
+                    <p class="story-pullquote">Let me tell you a little story.</p>
+                    </div>
+                </div>
+                </a>
+            </div>              <!-- Maggie Harden -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/home-sweet-homes">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/maggie-harden.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">Home sweet home(s)</p>
+                      <p class="story-author">Maggie Harden</p>
+                      <p class="story-pullquote">Life Lesson No. 1: You can make anything feel like home with sheer willpower.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              <!-- Emma Kumer -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/life-lessons-from-flowcharts">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/emma-kumer.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">Life lessons from flowcharts</p>
+                      <p class="story-author">Emma Kumer</p>
+                      <p class="story-pullquote">How writing quizzes in the back of NBN taught me that decisions aren’t that complex after all.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              </div>
+            <div class="clearfix">
+            <!-- Jakob Lazzaro -->
+            <div class="grid-entry-pos">
+                <a target="_blank" href="http://www.northbynorthwestern.com/existentialism-northwestern-and-you">
+                <div class="grid-entry" style="height: 224px;">
+                    <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/jakob-lazzaro.jpg" />
+                    <div class="story-content clearfix">
+                    <p class="story-title">Existentialism, Northwestern and you</p>
+                    <p class="story-author">Jakob Lazzaro</p>
+                    <p class="story-pullquote">I feel optimistically nihilistic that things will actually get better, and yet I must wait for something that may never come. I’m waiting for my personal Godot.</p>
+                    </div>
+                </div>
+                </a>
+            </div>              <!-- Meg Pisarczyk -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/evanston-as-home">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/meg-pisarczyk.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">How Evanston became the place I could comfortably call home</p>
+                      <p class="story-author">Meg Pisarczyk</p>
+                      <p class="story-pullquote">Now that I’m spending the final quarter of senior year at my childhood home, I somewhat ironically find myself longing for the feelings, tastes, sounds, and sights of the place I swore I would always feel somewhat disconnected from.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              <!-- Elly Rivera -->
+              <div class="grid-entry-pos">
+                  <a target="_blank" href="http://www.northbynorthwestern.com/miss-most">
+                  <div class="grid-entry" style="height: 224px;">
+                      <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/elly-rivera.jpg" />
+                      <div class="story-content clearfix">
+                      <p class="story-title">What I&#x27;ll miss most</p>
+                      <p class="story-author">Elly Rivera</p>
+                      <p class="story-pullquote">Some days I wanted to leave Evanston and never come back, but every time I’m not there, I’m always picturing what I would be doing if I was.</p>
+                      </div>
+                  </div>
+                  </a>
+              </div>              </div>
+            <div class="clearfix">
+            <!-- Audrey Valbuena -->
+            <div class="grid-entry-pos">
+                <a target="_blank" href="http://www.northbynorthwestern.com/the-untimely-task-of-reflection">
+                <div class="grid-entry" style="height: 224px;">
+                    <img class="circular" src="http://apps.northbynorthwestern.com.s3.amazonaws.com/commencement/2020/audrey-valbuena.jpg" />
+                    <div class="story-content clearfix">
+                    <p class="story-title">The untimely task of reflection</p>
+                    <p class="story-author">Audrey Valbuena</p>
+                    <p class="story-pullquote">I’m realizing that what is most salient in the everyday is not the name or the institution, but the discomfort it made me get used to living in. </p>
+                    </div>
+                </div>
+                </a>
+            </div>            </div>
+    </div>
+    <footer>
+      <div class="credits-container">
+        <div class="credits">
+          <p><strong>Published on June 25, 2020</strong></p>
+          <p><strong>Edited by </strong>Justin Curto and Maggie Harden</p>
+          <p><strong>Template by </strong>Nicole Zhu</p>
+          <p><strong>Modified by </strong>Maxine Whitely</p>
+          <p>Ⓒ 2020 <a href="https://northbynorthwestern.com/" target="_blank">North by Northwestern</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
